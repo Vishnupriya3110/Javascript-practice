@@ -1,0 +1,52 @@
+<script>
+    //task46
+    function add(num1, num2) {
+    return num1 + num2;
+}
+let result1 = add(5, 7);
+console.log(result1); // 12
+let result2 = add(-3, 8);
+console.log(result2); //  5
+let result3 = add(10.5, 4.5);
+console.log(result3); //  15
+
+//task47
+function calculateArea(len, wid) {
+    return len * wid;
+}
+let area1 = calculateArea(10, 5);
+console.log(area1); //  50
+let area2 = calculateArea(7, 3);
+console.log(area2); // : 21
+let area3 = calculateArea(12.5, 4.2);
+console.log(area3); //  52.5
+
+//task48
+function myfunc() {
+    console.log("Helloworld!");
+}
+myfunc(); // Helloworld!
+
+//task49
+
+function myfunc2() {
+    console.log("Heyyyyyy");
+}
+myfunc2(); //"Heyyyyyy"
+let result = myfunc2();; 
+console.log(result);// undefined
+
+
+//task50
+function Person(name = "none", age = 25, city = "none") {
+    return `${name} is ${age} years old and lives in ${city}.`;
+}
+let a = Person("Vishnu", 20, "Coimbatore");
+console.log(a);
+let b = Person();
+console.log(b);
+let c= Person("Vishnu", "Coimbatore");
+console.log(c);   
+
+
+</script>
