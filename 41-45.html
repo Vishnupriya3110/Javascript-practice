@@ -1,0 +1,53 @@
+<script>
+
+//task41
+// Define some boolean values for testing
+let a = true;
+let b = false;
+let c = true;
+let d = false;
+console.log("a && b:", a && b);      // false 
+console.log("a || b:", a || b);      // true 
+console.log("!(a && b):", !(a && b)); // true 
+console.log("!(a || b):", !(a || b)); // false
+console.log("a && b && c:", a && b && c); // false
+console.log("a || b || d:", a || b || d); // true
+console.log("(a && b) || (c && d):", (a && b) || (c && d)); // false 
+console.log("!(a || (b && d)):", !(a || (b && d))); // false 
+
+//task42
+let lowerlimit= 10;
+let upperlimit = 20;
+let num =parseInt(prompt("enter a number","enter")); 
+let isInRange = num >= lowerlimit && num <= upperlimit;
+document.write(isInRange); // Output: true 
+
+//task43
+let bool = false;
+bool = !bool;
+console.log(bool); // Output: true
+bool = !bool;
+console.log(bool); // Output: false
+
+//task44
+let num1 = 0;
+let result1 = num1 && 10; // Since num is 0 (a falsy value), 10 is not evaluated
+console.log(result1); // Output: 0
+let num2 = 10;
+
+let result2 = num || 20;
+console.log(result2); // Output: 10
+
+
+//task45
+let value1 = 0;
+let value2 = "test";
+let value3 = null;
+
+let result7 = value1 || value2 && value3;
+console.log(result7); // Output: null
+
+
+
+
+</script>

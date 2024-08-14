@@ -1,0 +1,52 @@
+<script>
+    //task36
+    let n=parseInt(prompt("Enter a number","number"));
+    if(n%2==0){
+        alert("Its an even number");
+    }
+    else
+       alert("Its odd");//Its odd
+
+     //task37
+     function classify(num) {
+    
+    if (num === 0) {
+        console.log("The number is zero.");
+    } else {
+   
+        if (num > 0) {
+            console.log("The number is positive.");
+        } else {
+            console.log("The number is negative.");
+        }
+    }
+}
+classify(5); //  The number is positive.
+classify(-3); //  The number is negative.
+classify(0);// The number is zero.
+
+   //task38
+   let num = 7; 
+let result = num > 0 ? "The number is positive."
+                   : num < 0 ? "The number is negative."
+                   : "The number is zero.";
+
+console.log(result);//The number is positive.
+
+//task39
+let v = "Hello"; 
+let validityMessage = (v !== null && v!== undefined && v !== '') 
+    ? "The variable is valid."
+    : "The variable is invalid.";
+
+console.log(validityMessage);//The variable is valid.
+
+//task40
+let age = 18;
+let eligibility = age >= 18 ? "Eligible to vote." : "Not eligible to vote.";
+console.log(eligibility);
+
+
+
+
+</script>

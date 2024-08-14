@@ -1,0 +1,34 @@
+<script>
+    //task21-24
+    var a,b,c,d,e,f,g,h;
+    a=10;
+    b='Apple';
+    c=1234567n;
+    d=null;
+    e={
+        name:'Jailey',
+    };
+    g=Symbol('g');
+    e[g]="Girl";
+    f=false;
+    document.write("Type of a:" + typeof a + "<br>");//Type of a:number
+    document.write("Type of b: " + typeof b + "<br>");//Type of b: string
+    document.write("Type of c: " + typeof c + "<br>");//Type of c: bigint
+    document.write("Type of d: " + typeof d + "<br>");//Type of d: object
+    document.write("Type of e: " + typeof e + "<br>");//Type of e: object
+    document.write("Type of f:" + typeof f + "<br>");//Type of f:boolean
+    document.write("Type of g: " + typeof g + "<br>");//Type of g: symbol
+    document.write("Type of h: " + typeof h + "<br>");//Type of h: undefined
+
+    //task25
+    var str='Hello';//These are global scoped or function scoped.
+    function myfunc(){
+    let a=12;//these are block scoped,values can be changed in the function
+    console.log("Inside myfunc:");
+    console.log(a);
+    console.log(str);
+    }
+
+console.log(str);
+myfunc();
+</script>

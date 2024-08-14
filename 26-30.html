@@ -1,0 +1,58 @@
+<script>
+    //task26
+    // Implicit conversion
+
+    let s = "435";
+
+    let n = s * 1; 
+    document.write(n);  // Output: 435
+    document.write("<br>");
+    document.write(typeof n); // Output: "number"
+
+    // Explicit conversion
+
+    let r = "262";
+    let sum = Number(r) + 10;
+    document.write("<br>");
+    document.write(sum); // Output: 272
+
+ //task27
+let bool = true;
+let strVal= String(bool);
+console.log(strVal); // Output: "true"
+console.log(typeof strValue); // Output: "string"
+
+//task28
+let x=26;
+let str="Harry";
+document.write(str+26+"<br>");
+document.write(str*26);
+document.write("<br>");
+var a=13;
+var b=23;
+document.write(a+b+"<br>");
+document.write(a-b);
+document.write("<br>");
+let str1="Vishnu";
+let str2="Priya";
+document.write(str1+str2);
+
+//task29
+let c = 12;
+document.write(c++);  // Output: 12
+document.write("<br>");
+document.write(c++);  // Output: 13
+document.write("<br>");
+document.write(c--);  // Output: 14
+document.write("<br>");
+
+//task30
+let a = 5;
+let b = 10;
+let c = 3;
+let d = 2;
+
+let result = a + b * c / d - a++ * --b;
+document.write(result);//output:-25
+
+</script>

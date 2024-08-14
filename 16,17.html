@@ -1,0 +1,26 @@
+<script>
+    //Task 16
+var str='Hello';//These are global scoped or function scoped.
+const b=10;//these are similar to let variables,values cannot be changed in the function
+function myfunc(){
+    let a=12;//these are block scoped,values can be changed in the function
+    console.log("Inside myfunc:");
+    console.log(a);
+    console.log(str);
+    console.log(b);
+}
+
+console.log(str);
+console.log(b);
+
+myfunc();
+
+//task17
+
+ b=11;
+ console.log(b);
+
+ //output is
+ //12.html:22 Uncaught TypeError: Assignment to constant variable.at 12.html:22:3
+
+</script>
